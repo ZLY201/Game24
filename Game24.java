@@ -1,4 +1,3 @@
-```java
 import java.util.*;
 public class Game24 {
 	static int[] number = new int[5];
@@ -208,5 +207,3 @@ public class Game24 {
 		Run24Game();
 	}
 }
-
-```
