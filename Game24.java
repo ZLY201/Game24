@@ -1,3 +1,4 @@
+```java
 import java.util.*;
 public class Game24 {
 	static int[] number = new int[5];
@@ -59,7 +60,7 @@ public class Game24 {
 						}
 					else if (Calculate(Calculate(a, Calculate(b, c, operator[j]), operator[i]), d, operator[k]) == 24) {
 						flag = true;
-						Solution = "(" + a + " " + operator[i] + " (" + b + " " + operator[j] + " " + c + ")) " + operator[k] + "" + d + "";
+						Solution = "(" + a + " " + operator[i] + " (" + b + " " + operator[j] + " " + c + ")) " + operator[k] + " " + d + "";
 						}
 					else if (Calculate(a, Calculate(b, Calculate(c, d, operator[k]), operator[j]), operator[i]) == 24) {
 						flag = true;
@@ -207,3 +208,5 @@ public class Game24 {
 		Run24Game();
 	}
 }
+
+```
