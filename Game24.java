@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Game24 {
 	static int[] number = new int[5];
 	static boolean[] count = new boolean[14];
@@ -49,7 +50,7 @@ public class Game24 {
 		for(int i = 1; i <= 4; ++i) {
 			for(int j = 1; j <= 4; ++j) {
 				for(int k = 1; k <= 4; ++k) {
-					if (Calculate(Calculate(a, b, operator[i]), Calculate(c, d, operator[j]), operator[k]) == 24) {
+					if (Calculate(Calculate(a, b, operator[i]), Calculate(c, d, operator[k]), operator[j]) == 24) {
 						flag = true;
 						Solution = "(" + a + " " + operator[i] + " " + b + "" + ")" + " " + operator[j] + " " + "(" + c + " " + operator[k] + " " + d + ")";
 						}
@@ -85,7 +86,7 @@ public class Game24 {
 		boolean tag = false;
 		while(!tag) {
 			for(int i = 1; i <= 4; ++i) {
-				number[i] = rand.nextInt(14);
+				number[i] = rand.nextInt(13) + 1;
 			}
 			if(check.containsKey(Hash(number))) continue;
 			Arrays.sort(number);
